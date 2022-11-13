@@ -1,0 +1,118 @@
+@font-face{
+  font-family: NanumGothic-Bold;
+  src: url(../fonts/NanumGothic-Bold.ttf);
+  font-style: normal;
+  font-variant:initial;
+}   
+@font-face{
+  font-family: NanumGothic-Regular;
+  src: url(../fonts/NanumGothic-Regular.ttf);
+  font-style: normal;
+  font-variant:initial;
+}    
+@font-face{
+  font-family: NanumMyeongjo-Regular;
+  src: url(../fonts/NanumMyeongjo-Regular.ttf);
+  font-style: normal;
+  font-variant:initial;
+}     
+@font-face{
+  font-family: Kanit-Regular;
+  src: url(../fonts/Kanit-Regular.ttf);
+  font-style: normal;
+  font-variant:initial;
+}      
+@font-face{
+  font-family: Kanit-Medium;
+  src: url(../fonts/Kanit-Medium.ttf);
+  font-style: normal;
+  font-variant:initial;
+}   
+a:hover{
+  text-decoration: none;
+}  
+   
+@media only screen and (max-width: 1024px) { /* MOBILE */
+  .mb-x{
+    display: none !important;
+  }  
+}
+@media only screen and (min-width: 1025px) { /* PC */
+  .pc-x{
+    display: none !important;
+  }  
+}  
+
+.navbar{
+  height: 80px;
+  background-color: black;
+  z-index: 2;
+}
+.navbar .nav-item{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.navbar .nav-item .nav-link{
+  color: #6c6356; 
+  font-family: Kanit-Medium;
+  font-size: 18px; 
+}
+.navbar .nav-item .nav-link:focus{
+  color: #9E907D; 
+}
+.navbar .nav-item .nav-link:hover{
+  color: #9E907D; 
+}
+footer{
+  position: fixed;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background-color: #161616;
+  z-index: 2;
+}
+.navbar-brand img{
+  max-height: 60px;
+}
+.myVideo {
+  object-fit: cover;
+  position: fixed; 
+  z-index:1;
+  width: 100%;
+  height: auto;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  z-index: 10;
+  height: calc(100vh - 160px);
+  position: relative;
+}
+
+
+
+/* transition: .33s all ease-out;  */
+/* font-family: Inter-SemiBold;  Regular */
+ 
+
+@media only screen and (max-width: 991px) { /* MOBILE */  
+  .navbar{
+    height: 60px; 
+  }
+  .navbar-brand img{
+    max-height: 36px;
+  } 
+  .myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+ 
