@@ -27,7 +27,13 @@
   src: url(../fonts/Kanit-Medium.ttf);
   font-style: normal;
   font-variant:initial;
-}   
+}     
+@font-face{
+  font-family: Kanit-Light;
+  src: url(../fonts/Kanit-Light.ttf);
+  font-style: normal;
+  font-variant:initial;
+}  
 a:hover{
   text-decoration: none;
 }  
@@ -71,6 +77,13 @@ footer{
   height: 80px;
   background-color: #161616;
   z-index: 2;
+  font-family: NanumGothic-Regular;
+  text-align: center; 
+  font-size: 13px;
+  color: #646464;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .navbar-brand img{
   max-height: 60px;
@@ -92,6 +105,54 @@ footer{
   height: calc(100vh - 160px);
   position: relative;
 }
+.app-load img{
+  height: 75px;
+  margin: 10px;
+} 
+.app-load{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 30px;
+}
+.btn-account{
+  color: #fff;
+  font-family: Kanit-Medium;
+  font-size: 30px;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, #393431, #3e3936, #433e3b, #494440, #4e4945);
+  border-bottom: 2px solid #2e2926; 
+  transition: .33s all ease-out;
+}
+.btn-account:hover{ 
+  background-image: linear-gradient(to bottom, #2d2727, #352f2e, #3e3735, #46403d, #4e4945);
+  color: #b2944c;
+}
+.icon-right{
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  margin-top: -100px;
+}
+.icon-right img{
+  display: block;
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.play-audio{
+  height: 70px; 
+  background: url(../images/off_audio.png) !important;
+  background-size: 60px 60px  !important;
+  background-repeat: repeat-x !important;
+  background-position: center center !important;
+}
+.play-audio.active{ 
+  background-repeat: repeat-x !important;
+  background: url(../images/on_audio.png) !important; 
+  background-size: 60px 60px  !important;
+  background-position: center center !important;
+}
+
 
 
 
@@ -113,6 +174,19 @@ footer{
     position: fixed;
     top: 0;
     left: 0;
+  }
+  footer{ 
+    height: 45px; 
+  }
+  .navbar .nav-item { 
+    margin-left: 5px;
+    margin-right: 5px
+  }
+  .navbar .nav-item .nav-link { 
+    font-size: 14px;
+  }
+  footer{ 
+    font-size: 12px; 
   }
 }
  

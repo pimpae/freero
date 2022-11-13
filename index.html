@@ -16,7 +16,7 @@
 <body>
 
 	<header>
-		<nav class="navbar navbar-light navbar-expand-xl  ">
+		<nav class="navbar navbar-expand">
 			<div class="container">
 					<a href="#" class="navbar-brand  ">
 						<img src="images/ico_logo.png" alt="">
@@ -49,15 +49,53 @@
 			<source src="images/loop2.mp4" type="video/mp4">
 		</video>
 
-		<div class="main">
-			<h1>xxxxxxxxx</h1>
+		<div class="main">  
+			<div class="container-fluid">
+				<div class="col text-center">
+					<a href="#" class="btn btn-account">
+						การจัดการบัญชี
+					</a>
+				</div>
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<a href="#" class="app-load">
+							<div>
+								<img src="images/windows.png" class="img-fluid d-block m-auto " alt="windows">
+							</div>
+						</a> 
+						<a href="#" class="app-load">
+							<div> 
+								<img src="images/android.png" class="img-fluid d-block m-auto" alt="android">
+							</div>
+						</a>
+
+						<div class="icon-right">
+							 
+							<audio id="track">
+								<source src="images/gw_audio.mp3" type="audio/mpeg" />
+							</audio>
+			 
+							<a href="#" id="play-pause" class="play">
+								<div class="play-audio"> </div>
+							</a>
+					
+							<a href="#" class="">
+								<img src="images/btn_sns_facebook.png" alt="facebook">
+							</a>
+							<a href="#" class="">
+								<img src="images/discord.png" alt="discord">
+							</a>
+						</div>
+					</div> 
+				</div>
+			</div>
 		</div>
 
 	</main>
 
 	
 	<footer>
-
+		MADE BY FREERO FOR LOVE. ALL RIGHTS RESERVED. 
 	</footer>
  
  
@@ -68,6 +106,35 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
 
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+
+	<script>
+		var track = document.getElementById('track');
+
+		var controlBtn = document.getElementById('play-pause');
+
+		function playPause() {
+			if (track.paused) {
+				track.play(); 
+				controlBtn.className = "pause";
+				document.getElementById("track").volume = 0.4; 
+			} else { 
+				track.pause(); 
+				controlBtn.className = "play";
+			}
+		}
+
+			controlBtn.addEventListener("click", playPause);
+			track.addEventListener("ended", function() {
+			controlBtn.className = "play";
+		});
+
+
+		$("#play-pause").click(function() {  
+            $(".play-audio").toggleClass("active");
+        });
+
+
+	</script>
 
  
 </body>
