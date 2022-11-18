@@ -207,15 +207,45 @@ footer{
   font-size: 16px; 
 
 }
-
+.navbar-toggler i{
+  color: #fff;
+  font-size: 20px;
+}
+.navbar-toggler:focus{
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
 
 /* transition: .33s all ease-out;  */
 /* font-family: Inter-SemiBold;  Regular */
+.bg-glass{
+  background: rgba( 255, 255, 255, 0.75 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9px );
+  -webkit-backdrop-filter: blur( 9px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  z-index: 11;
+  position: relative; 
+  padding: 30px 100px 50px;
+} 
+.bg-glass input{
+  background-color: rgba( 255, 255, 255, 0.75 ) !important;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9px );
+  -webkit-backdrop-filter: blur( 9px );
+  border-radius: 0px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
  
+} 
+
 
 @media only screen and (max-width: 991px) { /* MOBILE */  
   .navbar{
     height: 60px; 
+    padding: 0.5rem 0px !important;
   }
   .navbar-brand img{
     max-height: 36px;
@@ -259,5 +289,23 @@ footer{
     padding-top: 80px;
     padding-bottom: 30px; 
   }
+  .navbar-collapse{
+    background-color: #000;
+  }
+  .navbar-nav {
+    padding-left: 10px;
+  }
+  .bg-glass{ 
+    padding: 20px  ;
+  } 
 }
  
+@media only screen and (width: 1024px) { /* MOBILE */   
+  .myVideo {
+    object-fit: cover;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
