@@ -52,7 +52,7 @@ a:hover{
 .navbar{
   height: 80px;
   background-color: black;
-  z-index: 2;
+  z-index: 22;
 }
 .navbar .nav-item{
   margin-left: 15px;
@@ -298,6 +298,10 @@ footer{
   .bg-glass{ 
     padding: 20px  ;
   } 
+  .regisx footer{
+    position: relative !important;
+    margin-top: 30px;
+  }
 }
  
 @media only screen and (width: 1024px) { /* MOBILE */   
